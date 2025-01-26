@@ -1,14 +1,256 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Clone Yu-gi-oh!!</title>
+
+    <link rel="stylesheet" href="/src/css/fontes.css">
+    <link rel="stylesheet" href="/src/css/reset.css">
+    <link rel="stylesheet" href="/src/css/estilos.css">
+
 </head>
 
 <body>
-    <h1>Eu sou um título</h1>
+    <header class="cabecalho">
+        <h1 class="titulo">Clone YU-GI-OH</h1>
+    </header>
+
+    <main class="slider">
+        <button class="btn-seta btn-voltar" id="btn-voltar">
+            <img src="src/assets/seta.png" alt="seta voltar">
+        </button>
+
+        <ul class="lista-personagens">
+            <li class="cartao fundo-1 selecionado">
+                <div class="carta-virada"></div>
+                <!-- <h2 class="nome">Cosmo Sentinel, o Guardião Galáctico</h2> -->
+                <h2 class="nome">Dragão branco de olhos azuis</h2>
+
+                <div class="nivel-carta">
+                    <span class="estrela"></span>
+                    <span class="estrela"></span>
+                    <span class="estrela"></span>
+                    <span class="estrela"></span>
+                    <span class="estrela"></span>
+                    <span class="estrela"></span>
+                    <span class="estrela"></span>
+                    <span class="estrela"></span>
+                </div>
+
+                <img src="src/assets/dragao-branco.jpg" alt="Dragão branco de olhos azuis" class="imagem-carta">
+
+                <div class="informacoes">
+                    <p class="descricao">
+                        Este dragão lendário é uma poderosa máquina de destruição. Praticamente invencível, muito poucos
+                        enfrentaram esta magnífica criatura e viveram para contar a história.</p>
+                    <div class="informacoes-ataque">
+                        <span>ATK/ 3000</span>
+                        <span>DEF/ 2500</span>
+                    </div>
+                </div>
+            </li>
+
+            <li class="cartao fundo-2">
+                <div class="carta-virada"></div>
+                <!-- <h2 class="nome">Cosmo Sentinel, o Guardião Galáctico</h2> -->
+                <h2 class="nome">Mago Negro</h2>
+
+                <div class="nivel-carta">
+                    <span class="estrela"></span>
+                    <span class="estrela"></span>
+                    <span class="estrela"></span>
+                    <span class="estrela"></span>
+                    <span class="estrela"></span>
+                    <span class="estrela"></span>
+                    <span class="estrela"></span>
+                </div>
+
+                <img src="src/assets/mago-negro.webp" alt="Mago negro" class="imagem-carta">
+
+                <div class="informacoes">
+                    <p class="descricao">
+                        O mago definitivo em termos de ataque e defesa.</p>
+                    <div class="informacoes-ataque">
+                        <span>ATK/ 2500</span>
+                        <span>DEF/ 2100</span>
+                    </div>
+                </div>
+            </li>
+
+            <li class="cartao fundo-3">
+                <div class="carta-virada"></div>
+                <h2 class="nome">Dragão Negro de Olhos Vermelhos</h2>
+
+                <div class="nivel-carta">
+                    <span class="estrela"></span>
+                    <span class="estrela"></span>
+                    <span class="estrela"></span>
+                    <span class="estrela"></span>
+                    <span class="estrela"></span>
+                    <span class="estrela"></span>
+                    <span class="estrela"></span>
+                </div>
+
+                <img src="src/assets/dragao-negro.jpg" alt="DragãoNegro" class="imagem-carta">
+
+                <div class="informacoes">
+                    <p class="descricao">
+                        Um dragão feroz com um ataque letal.</p>
+                    <div class="informacoes-ataque">
+                        <span>ATK/ 2400</span>
+                        <span>DEF/ 2000</span>
+                    </div>
+                </div>
+            </li>
+
+            <li class="cartao fundo-4">
+                <div class="carta-virada"></div>
+                <!-- <h2 class="nome">Cosmo Sentinel, o Guardião Galáctico</h2> -->
+                <h2 class="nome">Ojama Amarelo</h2>
+
+                <div class="nivel-carta">
+                    <span class="estrela"></span>
+                    <span class="estrela"></span>
+                </div>
+
+                <img src="src/assets/ojama-amarelo.jpg" alt="Ojama Amarelo" class="imagem-carta">
+
+                <div class="informacoes">
+                    <p class="descricao">
+                        Ele é um dos do Trio Ojama. Diz-se que ele "butts" com qualquer meio necessário. Diz-se também
+                        que quando os três se juntam, algo acontece.</p>
+                    <div class="informacoes-ataque">
+                        <span>ATK/ 0</span>
+                        <span>DEF/ 1000</span>
+                    </div>
+                </div>
+            </li>
+
+            <li class="cartao fundo-5">
+                <div class="carta-virada"></div>
+                <!-- <h2 class="nome">Cosmo Sentinel, o Guardião Galáctico</h2> -->
+                <h2 class="nome">Jinzo</h2>
+
+                <div class="nivel-carta">
+                    <span class="estrela"></span>
+                    <span class="estrela"></span>
+                    <span class="estrela"></span>
+                    <span class="estrela"></span>
+                    <span class="estrela"></span>
+                    <span class="estrela"></span>
+                </div>
+
+                <img src="src/assets/jinzo.png" alt="Jinzo" class="imagem-carta">
+
+                <div class="informacoes">
+                    <p class="descricao">
+                        Os Cards de Armadilha, bem como seus efeitos no campo, não podem ser ativados. Negue todos os
+                        efeitos dos Cards de Armadilha no campo.</p>
+                    <div class="informacoes-ataque">
+                        <span>ATK/ 2400</span>
+                        <span>DEF/ 1500</span>
+                    </div>
+                </div>
+            </li>
+
+            <li class="cartao fundo-6">
+                <div class="carta-virada"></div>
+                <!-- <h2 class="nome">Cosmo Sentinel, o Guardião Galáctico</h2> -->
+                <h2 class="nome">Slifer, o Dragão dos Céus</h2>
+
+                <div class="nivel-carta">
+                    <span class="estrela"></span>
+                    <span class="estrela"></span>
+                    <span class="estrela"></span>
+                    <span class="estrela"></span>
+                    <span class="estrela"></span>
+                    <span class="estrela"></span>
+                    <span class="estrela"></span>
+                    <span class="estrela"></span>
+                    <span class="estrela"></span>
+                    <span class="estrela"></span>
+                </div>
+
+                <img src="src/assets/slifer.webp" alt="Slifer, o Dragão dos Céus" class="imagem-carta">
+
+                <div class="informacoes">
+                    <p class="descricao">
+                        Requer 3 Tributos para ser Invocado por Invocação-Normal (não pode ser Baixado Normalmente). A
+                        Invocação-Normal deste card não pode ser negada. Quando Invocado por Invocação-Normal, cards e
+                        efeitos não podem ser ativados. Durante a Fase Final, se este card foi Invocado por
+                        Invocação-Especial: envie-o para o Cemitério.</p>
+                    <div class="informacoes-ataque">
+                        <span>ATK/ ?</span>
+                        <span>DEF/ ?</span>
+                    </div>
+                </div>
+            </li>
+
+            <li class="cartao fundo-7">
+                <div class="carta-virada"></div>
+                <!-- <h2 class="nome">Cosmo Sentinel, o Guardião Galáctico</h2> -->
+                <h2 class="nome">Neos, o HERÓI do Elemento</h2>
+
+                <div class="nivel-carta">
+                    <span class="estrela"></span>
+                    <span class="estrela"></span>
+                    <span class="estrela"></span>
+                    <span class="estrela"></span>
+                    <span class="estrela"></span>
+                    <span class="estrela"></span>
+                    <span class="estrela"></span>
+                </div>
+
+                <img src="src/assets/neos.webp" alt="Neos, o HERÓI do Elemento" class="imagem-carta">
+
+                <div class="informacoes">
+                    <p class="descricao">
+                        Um novo HERÓI do Elemento chegou do Neoespaço! Quando ele inicia uma Fusão de Contato com um
+                        Neoespacial, seus poderes desconhecidos vêm à tona.
+                        .</p>
+                    <div class="informacoes-ataque">
+                        <span>ATK/ 2500</span>
+                        <span>DEF/ 2000</span>
+                    </div>
+                </div>
+            </li>
+
+            <li class="cartao fundo-8">
+                <div class="carta-virada"></div>
+                <!-- <h2 class="nome">Cosmo Sentinel, o Guardião Galáctico</h2> -->
+                <h2 class="nome">Cyber Dragão</h2>
+
+                <div class="nivel-carta">
+                    <span class="estrela"></span>
+                    <span class="estrela"></span>
+                    <span class="estrela"></span>
+                    <span class="estrela"></span>
+                    <span class="estrela"></span>
+                    <span class="estrela"></span>
+                    <span class="estrela"></span>
+                </div>
+
+                <img src="src/assets/cyber-dragao.jpg" alt="Cyber Dragão" class="imagem-carta">
+
+                <div class="informacoes">
+                    <p class="descricao">
+                        Se seu oponente controlar um monstro e você não controlar nenhum monstro, você pode Invocar este
+                        card por Invocação-Especial (da sua mão).
+                    </p>
+                    <div class="informacoes-ataque">
+                        <span>ATK/ 2100</span>
+                        <span>DEF/ 1600</span>
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+        <button class="btn-seta btn-avancar" id="btn-avancar">
+            <img src="src/assets/seta.png" alt="seta avançar">
+        </button>
+    </main>
 </body>
 
 </html>
